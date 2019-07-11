@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.huda.ta_mobile_programming.R
 import com.huda.ta_mobile_programming.data.model.jadwal.JadwalItem
-import com.huda.ta_mobile_programming.tampilan.DetailJadwalKuliah
+import com.huda.ta_mobile_programming.tampilan.DetailJadwalKuliahActivity
 import kotlinx.android.synthetic.main.list_jadwal_kuliah.view.*
 
 class JadwalKuliahAdapter : RecyclerView.Adapter<JadwalKuliahAdapter.ViewHolder> {
@@ -50,7 +50,7 @@ class JadwalKuliahAdapter : RecyclerView.Adapter<JadwalKuliahAdapter.ViewHolder>
         }
         holder.namaHariJadwal.text = namaHari + ","+ items?.get(position)?.waktu + ","+ items?.get(position)?.namaRuang
         holder.detailJadwal.setOnClickListener {
-            val intent: Intent = Intent(context, DetailJadwalKuliah::class.java)
+            val intent: Intent = Intent(context, DetailJadwalKuliahActivity::class.java)
             intent.putExtra("KODEJADWAL", items?.get(position)?.kodeJadwal)
             intent.putExtra("KODEKELAS", items?.get(position)?.kodeKelas)
             intent.putExtra("KODEMK", items?.get(position)?.kodeMk)

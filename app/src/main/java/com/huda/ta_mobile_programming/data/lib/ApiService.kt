@@ -13,6 +13,12 @@ interface ApiService {
         @Query("npm") npm: String
     ): Observable<ItemProfil>
 
+    @GET("detil_pribadi?")
+    fun getDataCariPribadi(
+        @Query("key") key : String,
+        @Query("npm") npm: String
+    ): Observable<ItemProfil>
+
 
     @GET("detil_jadwal?")
     fun getDetilJadwal(

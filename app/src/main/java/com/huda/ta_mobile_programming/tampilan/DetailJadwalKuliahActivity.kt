@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.huda.ta_mobile_programming.R
 import kotlinx.android.synthetic.main.activity_detail_jadwal_kuliah.*
 
-class DetailJadwalKuliah : AppCompatActivity() {
+class DetailJadwalKuliahActivity : AppCompatActivity() {
    lateinit var kodeJadwal:String
    lateinit var kodeKelas:String
    lateinit var kodeMk:String
