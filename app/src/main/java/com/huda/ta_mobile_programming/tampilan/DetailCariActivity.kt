@@ -1,7 +1,5 @@
 package com.huda.ta_mobile_programming.tampilan
 
-import android.annotation.SuppressLint
-import android.app.Activity
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -51,7 +49,7 @@ class DetailCariActivity : AppCompatActivity() {
                     tvAlamatProfil.text = items.get(i).almt
                     tvEmailProfil.text = items.get(i).email
                     tvGolProfil.text = items.get(i).darah
-                    tvTransportProfil.text = items.get(i).telp
+                    tvNoTlphonProfil.text = items.get(i).telp
                     tvAyahProfil.text= items.get(i).ayah
                     tvIbuProfil.text= items.get(i).ibu
                 }

@@ -13,8 +13,6 @@
             android:theme="@style/AppTheme">
         <activity android:name=".tampilan.DetailCariActivity">
         </activity>
-        <activity android:name=".tampilan.DataCari">
-        </activity>
         <activity android:name=".tampilan.DetailJadwalKuliahActivity">
         </activity> <!-- <activity android:name=".list_jadwal_kuliah"></activity> -->
         <activity
